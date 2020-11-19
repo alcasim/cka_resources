@@ -1,0 +1,16 @@
+apiVersion: "kubeadm.k8s.io/v1beta2"
+kind: ClusterConfiguration
+etcd:
+    local:
+        serverCertSANs:
+        - "192.168.199.10"
+        peerCertSANs:
+        - "192.168.199.10"
+        extraArgs:
+            initial-cluster: controller-0=https://192.168.199.10:2380,controller-1=https://192.168.199.11:2380,controller-2=https://192.168.199.12:2380
+            initial-cluster-state: new
+            name: controller-0
+            listen-peer-urls: https://192.168.199.10:2380
+            listen-client-urls: https://192.168.199.10:2379
+            advertise-client-urls: https://192.168.199.10:2379
+            initial-advertise-peer-urls: https://192.168.199.10:2380
