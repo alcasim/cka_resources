@@ -20,7 +20,7 @@ done
 
 sleep 60
 echo "--------- Start Kubernetes installation"
-vagrant ssh controller-0 -c "sudo /vagrant/scripts/kubernetes/start_kubernetes_install.sh"
+vagrant ssh controller-0 -c "sudo /vagrant/scripts/kubernetes/start_kubernetes_install.sh multi"
 echo "--------- Installing controller nodes"
 vagrant ssh controller-1 -c "sudo /vagrant/scripts/kubernetes/join_controller.sh"
 vagrant ssh controller-2 -c "sudo /vagrant/scripts/kubernetes/join_controller.sh"
