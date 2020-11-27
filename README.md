@@ -23,7 +23,7 @@ Contributions and fixes are welcome :)
 These tips assume you are already familiar with k8s and you want to tune up your skills for the exam. If you are not familiar a good starting point are the [tutorials from kubernetes.io](https://kubernetes.io/docs/tutorials/), don't hesitate to practice as much as you want with [minikube](https://minikube.sigs.k8s.io/docs/start/), even trying questions from the CKAD exam.
 
 I loosely followed this order to study:
-1. Reading the docs, following the curriculum sections proposed in the [walidshaari's Kubernetes Certified Administration repo](https://github.com/walidshaari/Kubernetes-Certified-Administrator)
+1. Reading the docs. I started by following the curriculum sections proposed in the [walidshaari's Kubernetes Certified Administration repo](https://github.com/walidshaari/Kubernetes-Certified-Administrator). Then I read both [Concepts](https://kubernetes.io/docs/concepts/) and [Tasks](https://kubernetes.io/docs/tasks/) sections while I was dealing with the next points, while I was facing problems or challenges during my progress.
 2. Do [Kelsey Hightower "Kubernetes the Hard Way"](https://github.com/kelseyhightower/kubernetes-the-hard-way), I did it several times until I got familiar with which certificates are needed, how to create ETCD, etc... the `multi-node-cluster` can be used to follow this guide
 3. Try creating a cluster with a controller node and a worker node with kubeadm following [the official documentation](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/)
 4. Rinse and repeat creating a multi node cluster with kubeadm. There are scripts which will do it by you in the `multi-node-cluster`, you can check them if you get stuck.
@@ -32,7 +32,7 @@ I loosely followed this order to study:
 7. Trying the [CKA example exam questions](https://levelup.gitconnected.com/kubernetes-cka-example-questions-practical-challenge-86318d85b4d) (a cluster is also provided there).
 8. Practice some ETCD backup and restore (not needed in a multi node environment, but it doesn't hurt doing it)
 
-This is not a strict order, it helps to follow it to acquire the installation/upgrade knowledge, but if you don't want to focus in the same thing all the time you can mix it with attempting CKAD questions in the middle.
+This is not a strict order, it helps to follow it to acquire the installation/upgrade knowledge, but you can mix them up. For example, you can start digging how Deployments works, running examples in one of the clusters, then try to create a cluster, then go back to other Documentation section... It's worth to note half of the curriculum has to do with installation, upgrade and troubleshooting, so you should be really thorough with those parts.
 
 For the exam, you should get used to easily locate what you need in the documentation (learn how to quickly navigate and to find sections you may need in your travels).
 
